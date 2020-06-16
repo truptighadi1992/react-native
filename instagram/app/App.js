@@ -1,10 +1,18 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Alert} from 'react-native';
-import Posts from '../app/screens/posts/post';
+import Routes from '../app/routes/Routes';
 
+import configureStore from '../app/redux/store';
+import {Provider} from 'react-redux';
+
+const store = configureStore();
 class App extends Component {
   render() {
-    return <Posts />;
+    return (
+      <Provider store={store}>
+        <Routes />
+      </Provider>
+    );
   }
 }
 
