@@ -117,7 +117,7 @@ function QueryStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Queries"
+        name="Query"
         component={QueryScreen}
         options={parentHeaderStyle}
       />
@@ -216,7 +216,7 @@ function HomeTab() {
         component={QueryStack}
         listeners={({navigation}) => ({
           tabPress: e => {
-            navigation.navigate('Queries');
+            navigation.navigate('Query');
           },
         })}
       />
@@ -225,7 +225,7 @@ function HomeTab() {
         component={ScheduleStack}
         listeners={({navigation}) => ({
           tabPress: e => {
-            navigation.navigate('Queries');
+            navigation.navigate('Schedule');
           },
         })}
       />

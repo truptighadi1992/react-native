@@ -27,6 +27,10 @@ class QueryScreen extends Component {
     };
     this.readData = this.readData.bind(this);
     this.authorizeUser = this.authorizeUser.bind(this);
+
+    this.props.navigation.setOptions({
+      headerTitle: 'Queries',
+    });
   }
 
   authorizeUser() {

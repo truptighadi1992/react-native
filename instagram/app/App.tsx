@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Alert} from 'react-native';
-import Routes from '../app/routes/Routes';
+import Routes from './routes/Routes';
 
-import configureStore from '../app/redux/store';
+import configureStore from './redux/store';
 import {Provider} from 'react-redux';
 
 const store = configureStore();

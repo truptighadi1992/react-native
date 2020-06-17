@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   row2: {flexDirection: 'row', justifyContent: 'center'},
   title: {
     color: Color.greyLight,
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: 'Roboto-Regular',
   },
   value: {
